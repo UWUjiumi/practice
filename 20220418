@@ -1,0 +1,20 @@
+////& 取地址操作符
+//int* pa = &a;//pa是用来存放地址得-pa就是一个指针
+//*pa;//*-解引用操作符-间接访问操作符 
+////两个*不一样 第一个是表示指针 第二个是表示操作符
+//
+//int main()
+//{
+//	int a = (int)3.14;//强制类型转换
+//	return 0;
+//}
+#include <stdio.h>
+//void test1(int arr[])//传过来的是数组的第一个元素的地址，本质是指针 所以大小都是4
+//{
+//	printf("%d\n", sizeof(arr));
+//}
+//void test2(char ch[])
+//{
+//	printf("%d\n", sizeof(ch));
+//}
+  
