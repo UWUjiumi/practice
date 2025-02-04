@@ -16,6 +16,12 @@
 输出：1
 
 class Solution {
+    public static void main(String[] args) {
+         //int[5] test = [3,0,6,1,5];  巩固int数组的创建方式
+         //System.out(hIndex(test));   只记得快捷键sout，记忆全部
+            int[] test ={3,0,6,1,5};
+            System.out.println(hIndex(test));
+    }
     public int hIndex(int[] citations) {
        int n = citations.length, tot = 0;
         int[] counter = new int[n + 1];  //设置一个计数器来记录当前引用次数的论文有几篇
