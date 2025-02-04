@@ -1,0 +1,18 @@
+class Solution {
+    public boolean isSubsequence(String s, String t) {
+        int left;
+        int right =0;
+        for(left =0;left<s.length()-1;left++){
+            while(s.charAt(left)!=t.charAt(right)){
+                right++;
+                if(right>t.length()-1){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+}
+
+思路：两个字串用两个指针进行判断，子序列的指针如果有一个字母找不到就返回false，所有字母都按顺序找到才算成功true
+练习过程中出现的问题：对字符串的length函数使用，要加括号。并且这个长度是常规概念中的大小，所以最后一位要-1下标才对，不然会超出字符串长度报错。
